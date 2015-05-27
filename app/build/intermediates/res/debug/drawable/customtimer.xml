@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+   <solid android:color="#1e8221"/> 
+   <!-- <gradient android:angle="-90" android:startColor="#a9f7a6" android:endColor="#5df856"  />-->
+   <stroke android:width="3dip" android:color="#229826"/>
+      </shape><!-- From: file:/C:/Users/Acer/AndroidStudioProjects/FootballFacetap/app/src/main/res/drawable/customtimer.xml -->

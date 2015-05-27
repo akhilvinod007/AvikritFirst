@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radial_background"
+    android:orientation="vertical" >
+	
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:gravity="center"
+        android:background="@drawable/group_layout_style_odd"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+         
+       android:textSize="40sp"
+       android:textStyle="bold"
+       android:textColor="#FFFFFF"
+       android:onClick="onPlayClick"
+        android:text="Play" />
+    
+    <Button
+        android:id="@+id/sharebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:gravity="center"
+        android:background="@drawable/group_layout_style_odd"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:layout_below="@id/play_button"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+       android:textSize="40sp"
+       android:textStyle="bold"
+       android:textColor="#FFFFFF"
+       
+        android:text="Share" />
+    
+    <Button
+        android:id="@+id/highscore_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:gravity="center"
+        android:background="@drawable/group_layout_style_odd"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:layout_below="@id/sharebutton"
+       android:textSize="40sp"
+       android:textStyle="bold"
+       android:textColor="#FFFFFF"
+       
+        android:text="High Score" />
+    
+    <Button
+        android:id="@+id/help_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:gravity="center"
+        android:background="@drawable/group_layout_style_odd"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:layout_below="@id/highscore_button"
+       android:textSize="40sp"
+       android:textStyle="bold"
+       android:textColor="#FFFFFF"
+        android:text="Help" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Acer/AndroidStudioProjects/FootballFacetap/app/src/main/res/layout/home_screen_layout.xml -->

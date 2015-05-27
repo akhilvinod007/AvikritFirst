@@ -1,0 +1,66 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/radial_background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.football.facetap.PlayModeSelection">
+
+    <Button
+        android:id="@+id/single_play_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:gravity="center"
+        android:background="@drawable/group_layout_style_odd"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+
+
+        android:text="Single Player" />
+
+
+    <Button
+        android:id="@+id/multi_play_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:gravity="center"
+        android:background="@drawable/group_layout_style_odd"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_below="@id/single_play_button"
+        android:textColor="#FFFFFF"
+
+        android:text="Multi Player" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/button_sign_in_play_mode_activity"
+        style="@style/SignInButton"
+        android:onClick="googlePlusLogin"
+        android:layout_below="@id/multi_play_button"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/button_sign_out_play_mode_activity"
+        style="@style/SignOutButton"
+        android:onClick="googlePlusLogout"
+        android:layout_below="@id/multi_play_button"
+        android:gravity="center"
+        android:text="Sign Out"
+        />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+ <item android:state_pressed="true" >
+     <shape android:shape="rectangle"  >
+         <corners android:radius="10dip" />
+         <stroke android:width="1dip" android:color="#FFFFFF" />
+         <gradient android:angle="-90" android:startColor="#8C562A" android:endColor="#8C562A"  />            
+     </shape>
+ </item>
+<item android:state_focused="true">
+     <shape android:shape="rectangle"  >
+         <corners android:radius="10dip" />
+         <stroke android:width="1dip" android:color="#FFFFFF" />
+         <solid android:color="#58857e"/>       
+     </shape>
+ </item>  
+<item >
+    <shape android:shape="rectangle"  >
+         <corners android:radius="10dip" />
+         <stroke android:width="1dip" android:color="#FFFFFF" />
+         <gradient android:angle="-90" android:startColor="#8C562A" android:endColor="#8C562A" />            
+     </shape>
+ </item>
+</selector>
+<!-- 
+#246BB2
+
+
+
+
+#0044AA
+
+#3369BB  --><!-- From: file:/C:/Users/Acer/AndroidStudioProjects/FootballFacetap/app/src/main/res/drawable/row_layout_style_odd.xml -->

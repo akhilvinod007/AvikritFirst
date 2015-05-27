@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@drawable/radial_background" >
+	
+    
+    <TextView
+	        android:id="@+id/loadertext"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center"
+	        android:gravity="center"  
+	        
+	      
+	        android:layout_weight="1"
+	       
+	        android:textSize="35sp"
+	        
+	        
+	        android:text="Loading..."
+	        android:textColor="#FFFFFF"
+	        android:includeFontPadding="false"
+	        
+	        android:textAlignment="center"
+	        android:textStyle="bold"
+	         />
+    
+</LinearLayout><!-- From: file:/C:/Users/Acer/AndroidStudioProjects/FootballFacetap/app/src/main/res/layout/dbloader.xml -->

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radial_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/topspace"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="10"
+            android:orientation="horizontal" >
+<!-- Image view with profile pic of player later-->
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:layout_weight="40"
+                android:background="@drawable/customscore"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#f9ea48"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+<!-- Image view with profile pic of other player later-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/imagecontainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="horizontal" >
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:orientation="vertical"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip" >
+
+                <TextView
+                    android:id="@+id/yourName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/You"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+
+                <ProgressBar
+                    android:id="@+id/playerOneProgressBar"
+                    style="@style/Widget.ProgressBar.Vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:background="#FFFFFF"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="false"
+                    android:background="#000000"
+                    android:contentDescription="thepic"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imagewrapper"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:contentDescription="thepic" />
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/tileOverlayTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" >
+
+                    <TableRow style="@style/tileRow" >
+
+                        <LinearLayout
+                            android:id="@+id/tile_01"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_01" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_02"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_02" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_03"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_03" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_04"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_04" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_05"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_05" >
+                            </View>
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow style="@style/tileRow" >
+
+                        <LinearLayout
+                            android:id="@+id/tile_06"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_06" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_07"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_07" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_08"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_08" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_09"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_09" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_10"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_10" >
+                            </View>
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow style="@style/tileRow" >
+
+                        <LinearLayout
+                            android:id="@+id/tile_11"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_11" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_12"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_12" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_13"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_13" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_14"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_14" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_15"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_15" >
+                            </View>
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow style="@style/tileRow" >
+
+                        <LinearLayout
+                            android:id="@+id/tile_16"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_16" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_17"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_17" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_18"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_18" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_19"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_19" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_20"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_20" >
+                            </View>
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow style="@style/tileRow" >
+
+                        <LinearLayout
+                            android:id="@+id/tile_21"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_21" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_22"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_22" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_23"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_23" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_24"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_24" >
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tile_25"
+                            style="@style/tileWrapper" >
+
+                            <View
+                                style="@style/tileStyle"
+                                android:background="@drawable/tile_25" >
+                            </View>
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/OpponentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/Progress"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+
+                <ProgressBar
+                    android:id="@+id/playerTwoProgressBar"
+                    style="@style/Widget.ProgressBar.Vertical2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="12dip"
+                    android:gravity="bottom" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/midspace"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/optionbar1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/optionA"
+                style="@style/buttonStyle"
+                android:layout_margin="10dip"
+                android:text="@string/optionA" />
+
+            <Button
+                android:id="@+id/optionB"
+                style="@style/buttonStyle"
+                android:layout_margin="10dip"
+                android:text="@string/optionB" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/optionbar2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/optionC"
+                style="@style/buttonStyle"
+                android:layout_margin="10dip"
+                android:text="@string/optionC" />
+
+            <Button
+                android:id="@+id/optionD"
+                style="@style/buttonStyle"
+                android:layout_margin="10dip"
+                android:text="@string/optionD" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/spinningwait"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateDrawable="@drawable/progress"
+        android:visibility="invisible" >
+    </ProgressBar>
+
+</RelativeLayout><!-- From: file:/C:/Users/Acer/AndroidStudioProjects/FootballFacetap/app/src/main/res/layout/multiplayer_gameplay.xml -->

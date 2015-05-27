@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TableLayoutDemo</string>
+    <string name="optionA"></string>
+    <string name="optionB"></string>
+    <string name="optionC"></string>
+    <string name="optionD"></string>
+    <string name="maxScore">10000</string>
+    <string name="timervalue">10000</string>
+    <string name="title_activity_dbloader">DBLoader</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_initial_loading">Football FaceTap</string>
+    <string name="gamename">Footie Tiles</string>
+    <string name="Time">Time</string>
+    <string name="You">You</string>
+    <string name="Progress">Progress</string>
+    <string name="title_activity_play_mode_selection">PlayModeSelection</string>
+    <string name="title_activity_multiplayer_gameplay">multiplayerGameplay</string>
+    <string name="title_activity_multiplayer_mode_selector">Multiplayer_mode_selector</string>
+    <string name="invite">Invite a friend</string>
+    <string name="random">Random Opponent</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
