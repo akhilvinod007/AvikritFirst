@@ -147,6 +147,7 @@ public class PlayModeSelection extends FragmentActivity implements GoogleApiClie
     public void gameLaunchSinglePlayerFragmentStart(String category, DBLoader.GameLaunchmode launchmode) {
 
         Log.d("AKHIL","gameLaunchSinglePlayerFragmentStart");
+        currentScreen = currScreenEnum.SINGLE_PLAYER_FRAGMENT;
         if(DBLoader.GameLaunchmode.OFFLINEMODE   == launchmode)
            mDBLauncherFragment = new DBLauncher(category,"OFFLINE");
         else
@@ -194,7 +195,7 @@ public class PlayModeSelection extends FragmentActivity implements GoogleApiClie
 
     public void multiplayerGameStart()
     {
-
+        currentScreen = currScreenEnum.MULTI_PLAYER_FRAGMENT;
         for (Participant p : mParticipants) {
             if (p.getParticipantId().equals(mMyId))
                 continue;

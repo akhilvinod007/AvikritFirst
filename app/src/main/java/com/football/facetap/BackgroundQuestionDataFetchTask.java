@@ -159,6 +159,7 @@ public class BackgroundQuestionDataFetchTask extends AsyncTask<Void, Void, Quest
 
 		try {
 			//stream = getHttpConnection(url);
+
 			File dataDir = activity.getActivity().getApplicationContext().getFilesDir();
 			if(!dataDir.exists()) {
 				Log.d("AKHIL","Directory doesn't exist. Creating it");

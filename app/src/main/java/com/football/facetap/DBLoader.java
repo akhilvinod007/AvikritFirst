@@ -504,7 +504,8 @@ public class DBLoader extends GameDataLoadingActivity  {
 				builder.setPositiveButton("Offline Play", new OfflineGameLaunchCLickListener());
 				builder.setNegativeButton("Quit", new GameQuitClickListener());
 				builder.setNeutralButton("Wait", new GameQuitCancelListener());
-				dialog= builder.create();  
+				dialog= builder.create();
+
 				dialog.show();
 			} else {
 				Log.d("AKHIL","FIVE_SEC_INTERVAL_EXPIRE       launchLock  ="+launchLock);

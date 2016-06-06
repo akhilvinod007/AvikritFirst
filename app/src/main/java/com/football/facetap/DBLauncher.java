@@ -63,14 +63,14 @@ public class DBLauncher extends GameDataLoadingActivity implements View.OnClickL
 	int questionScore=MAX_QUESTION_SCORE;
 	int currentScore=0;
 	int numberOfWrongTries=0;
-	int lifeImageIds[] = new int[5];
+	//int lifeImageIds[] = new int[5];
 	Boolean updateDone=false; // this is used to ascertain if the DB has been updated after the game gets over
 	private static String category="";
 	ArrayList<AppLocalQuestionObject> questionObjectArray;  // the main arrayList which contains all the data
 	ImageView  imagewrapper; 
 	int [] tilesStatusArray =  new int[25]; // 0 indicates disappearing of tile is OK. 1 indicates it is not OK
-	private ProgressBar timeElapsed;
-	private ProgressBar questionProgess;
+	//private ProgressBar timeElapsed;
+	//private ProgressBar questionProgess;
 	ArrayList<Integer> correctOption= new ArrayList<Integer>();
 	MyCountDownTimer countdowntimer;
     enum GameStatus{ON,OVER, DOWNLOADING,PAUSE};
@@ -183,7 +183,7 @@ public class DBLauncher extends GameDataLoadingActivity implements View.OnClickL
 		@Override
 		public void onTick(long millisUntilFinished) {
 			globalmillisUntilFinished=millisUntilFinished;
-			timeElapsed.setProgress((int) ( 100 - millisUntilFinished / 1000));
+			//timeElapsed.setProgress((int) ( 100 - millisUntilFinished / 1000));
 			
 			
 		}
@@ -215,18 +215,18 @@ public class DBLauncher extends GameDataLoadingActivity implements View.OnClickL
         }
 
 
-        timeElapsed = (ProgressBar) layoutView.findViewById(R.id.timeBar);
-        questionProgess = (ProgressBar) layoutView.findViewById(R.id.questionProgress);
-        questionProgess.setProgress(0);
-        timeElapsed.setProgress(0);
+        //timeElapsed = (ProgressBar) layoutView.findViewById(R.id.timeBar);
+        //questionProgess = (ProgressBar) layoutView.findViewById(R.id.questionProgress);
+        //questionProgess.setProgress(0);
+        //timeElapsed.setProgress(0);
 
-
+/*
         lifeImageIds[0]=R.id.life1;
         lifeImageIds[1]=R.id.life2;
         lifeImageIds[2]=R.id.life3;
         lifeImageIds[3]=R.id.life4;
         lifeImageIds[4]=R.id.life5;
-
+*/
 
         optionViewIds[0]=R.id.optionA;
         optionViewIds[1]=R.id.optionB;
@@ -328,7 +328,7 @@ public class DBLauncher extends GameDataLoadingActivity implements View.OnClickL
 			if(answerSelected==correctOption.get(current_question_number))
 			{
 				buttonLock=true;
-				questionProgess.setProgress(questionProgess.getProgress()+5);
+				//questionProgess.setProgress(questionProgess.getProgress()+5);
 				currentScore+=questionScore;
 				questionScore=MAX_QUESTION_SCORE;
 				scoreBox.setText(String.format("%05d",currentScore));
@@ -397,14 +397,14 @@ public class DBLauncher extends GameDataLoadingActivity implements View.OnClickL
 				questionScore-=BUTTON_CLICK_PENALTY;
 				Toast.makeText(getActivity().getApplicationContext(), "Wrong!!", Toast.LENGTH_SHORT).show();
 				
-				
+				/*
 				if(numberOfWrongTries<5) {
 					// Strike out a life
 					ImageView tempImageView= (ImageView)layoutView.findViewById(lifeImageIds[numberOfWrongTries]);
 					tempImageView.setBackgroundResource(getResources().getIdentifier("rcross2","drawable",getActivity().getPackageName()));
 					Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.life_consume);
 					tempImageView.startAnimation(animation);
-				} 
+				} */
 				
 				numberOfWrongTries++;
 				

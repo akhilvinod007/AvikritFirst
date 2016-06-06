@@ -2,74 +2,81 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Acer\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
-        jumboMode="false"
+        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\libs\google-api-client-1.17.0-rc.jar"
+        jumboMode="true"
         revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-370b98ee875de1b7022869df1a8c9f69ad2c628b.jar" />
+        sha1="d6030b729a2c0f277bbd65aecc53b0156123c1d7">
+        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\transforms\dex\debug\folders\1000\2\google-api-client-1.17.0-rc_fcfe8e96255e8bb5c0dfb908b6dee2ad5dcc9963\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-21.0.3_ebc35c865b98c6f1ab868ced10cfcbc320f705ec\classes.dex" />
     </item>
     <item
         jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\libs\google-http-client-1.17.0-rc.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="21.1.2"
         sha1="8c3af35a458e5430f9d2f9bf9f12117673500ba0">
-        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\pre-dexed\debug\google-http-client-1.17.0-rc-756e35414f62b38c6d66f0004c4adf264f28b4d7.jar" />
+        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\transforms\dex\debug\folders\1000\2\google-http-client-1.17.0-rc_756e35414f62b38c6d66f0004c4adf264f28b4d7\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
         revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\pre-dexed\debug\classes-5eb832af55b59e36c9429433ce2a785411d2b005.jar" />
-    </item>
-    <item
-        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\exploded-aar\FootballFacetap\BaseGameUtils\unspecified\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="34f09b9fbf340b2d26dcfa0be230d21aaa1e34f4">
-        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\pre-dexed\debug\classes-770ebe8249fae0209ce24a29664de28c7187344a.jar" />
-    </item>
-    <item
-        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\pre-dexed\debug\classes-0f9993f690f45f16384e47c0428becb771fb3c8c.jar" />
-    </item>
-    <item
-        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-13f4ab454a4aabff5ed1896d64bafeb030aee721.jar" />
-    </item>
-    <item
-        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\libs\androidapi-v1-1.19.0-SNAPSHOT.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="3182dfedfd9565360e489d068d7791f7cf004892">
-        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\pre-dexed\debug\androidapi-v1-1.19.0-SNAPSHOT-0c85a6fca6c61bca7ebf14606315fe90ab582aae.jar" />
-    </item>
-    <item
-        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
-        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\pre-dexed\debug\classes-0cb17729d46a849f3b1818903c845c3f8c1c5a6b.jar" />
+        sha1="5331d7e5b93066037b5fa2f1209a0033bd2f0635">
+        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6c95329d333b5cce155d4ba5bb5d02ab7326bbdf\classes.dex" />
     </item>
     <item
         jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\libs\google-http-client-android-1.17.0-rc.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="21.1.2"
         sha1="c6ef8e9d839d3aa873651214975c9ce4cbe1709b">
-        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\pre-dexed\debug\google-http-client-android-1.17.0-rc-9af61e984d4b9eed36664a983aaeda9c4a4e6efc.jar" />
+        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\transforms\dex\debug\folders\1000\2\google-http-client-android-1.17.0-rc_9af61e984d4b9eed36664a983aaeda9c4a4e6efc\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\libs\google-api-client-1.17.0-rc.jar"
-        jumboMode="false"
+        jar="C:\Users\Acer\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="true"
         revision="21.1.2"
-        sha1="d6030b729a2c0f277bbd65aecc53b0156123c1d7">
-        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\pre-dexed\debug\google-api-client-1.17.0-rc-fcfe8e96255e8bb5c0dfb908b6dee2ad5dcc9963.jar" />
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-21.0.3_370b98ee875de1b7022869df1a8c9f69ad2c628b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\libs\androidapi-v1-1.19.0-SNAPSHOT.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="3182dfedfd9565360e489d068d7791f7cf004892">
+        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\transforms\dex\debug\folders\1000\2\androidapi-v1-1.19.0-SNAPSHOT_0c85a6fca6c61bca7ebf14606315fe90ab582aae\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="e7e7233ccb1f8a7f4c236b53ce688765732dc21a">
+        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_be6c89b050b0e742a7518de5200a595ad938fb5b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-21.0.3_af9423e85032d2327be1db4d7905acf828e856dd\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\jars\classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-6.5.87_393bcb1f733a172e45656d528a40a83a3da67691\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Acer\AndroidStudioProjects\FootballFacetap\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-21.0.3_c6164c754f09603a6e405b34d6176b60dd590a9f\classes.dex" />
     </item>
 
 </items>

@@ -6,7 +6,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/radial_background"
+        android:background="#E24147"
         android:orientation="vertical" >
 
         <LinearLayout
@@ -17,65 +17,58 @@
             android:layout_weight="10"
             android:orientation="horizontal" >
 
+
+
+
             <!--
-		<LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="60"
-            android:orientation="horizontal"
-            android:layout_margin="10dp"
-            android:layout_marginTop="0dp"
-            android:layout_gravity="top" 
-            android:background="#70ffffff">
-            -->
+                        <ImageView
+                            android:id="@+id/life1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dip"
+                            android:layout_weight="12"
+                            android:background="@drawable/wcross2" />
 
-            <ImageView
-                android:id="@+id/life1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dip"
-                android:layout_weight="12"
-                android:background="@drawable/wcross2" />
+                        <ImageView
+                            android:id="@+id/life2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dip"
+                            android:layout_weight="12"
+                            android:background="@drawable/wcross2" />
 
-            <ImageView
-                android:id="@+id/life2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dip"
-                android:layout_weight="12"
-                android:background="@drawable/wcross2" />
+                        <ImageView
+                            android:id="@+id/life3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dip"
+                            android:layout_weight="12"
+                            android:background="@drawable/wcross2" />
 
-            <ImageView
-                android:id="@+id/life3"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dip"
-                android:layout_weight="12"
-                android:background="@drawable/wcross2" />
+                        <ImageView
+                            android:id="@+id/life4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dip"
+                            android:layout_weight="12"
+                            android:background="@drawable/wcross2" />
 
-            <ImageView
-                android:id="@+id/life4"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dip"
-                android:layout_weight="12"
-                android:background="@drawable/wcross2" />
+                        <ImageView
+                            android:id="@+id/life5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dip"
+                            android:layout_weight="12"
+                            android:background="@drawable/wcross2" />
+                            -->
 
-            <ImageView
-                android:id="@+id/life5"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dip"
-                android:layout_weight="12"
-                android:background="@drawable/wcross2" />
+
             <!--
-        </LinearLayout>
-            
-		<View
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="20" />
-            -->
+           <View
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="20" />
+               -->
 
             <TextView
                 android:id="@+id/score"
@@ -100,51 +93,66 @@
             android:layout_weight="50"
             android:orientation="horizontal" >
 
-            <!--
-        <View
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="15" />
-            -->
-
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="15"
-                android:orientation="vertical"
+                android:layout_weight="10"
+                android:orientation="horizontal"
                 android:paddingLeft="12dip"
-                android:paddingRight="12dip" >
+                android:paddingRight="12dip">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/Time"
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="10sp" />
-
-                <ProgressBar
-                    android:id="@+id/timeBar"
-                    style="@style/Widget.ProgressBar.Vertical"
-                    android:layout_width="match_parent"
+                <View
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="bottom"
-                    android:gravity="bottom" />
+                    android:layout_weight="100" />
             </LinearLayout>
+            <!--
 
-            <RelativeLayout
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="15"
+                 android:orientation="vertical"
+                 android:paddingLeft="12dip"
+                 android:paddingRight="12dip" >
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:text="@string/Time"
+                     android:textAlignment="center"
+                     android:textColor="#FFFFFF"
+                     android:textSize="10sp" />
+
+                 <ProgressBar
+                     android:id="@+id/timeBar"
+                     style="@style/Widget.ProgressBar.Vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="bottom"
+                     android:gravity="bottom" />
+             </LinearLayout>
+ -->
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="60"
-                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:background="#123456"
                 android:padding="10dp" >
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="false"
-                    android:background="#000000"
+                    android:background="#AAFFAA"
                     android:contentDescription="thepic"
                     android:orientation="horizontal" >
 
@@ -427,39 +435,50 @@
                     </TableRow>
                 </TableLayout>
             </RelativeLayout>
-            <!--
-            <View
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="15" />
-            -->
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="15"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/Progress"
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="10sp" />
-
-                <ProgressBar
-                    android:id="@+id/questionProgress"
-                    style="@style/Widget.ProgressBar.Vertical2"
-                    android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:orientation="horizontal"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip" >
+                <View
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="bottom"
-                    android:layout_marginLeft="12dip"
-                    android:layout_marginRight="12dip"
-                    android:gravity="bottom" />
+                    android:layout_weight="100" />
             </LinearLayout>
         </LinearLayout>
+        <!--
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/Progress"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                        <ProgressBar
+                            android:id="@+id/questionProgress"
+                            style="@style/Widget.ProgressBar.Vertical2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="12dip"
+                            android:layout_marginRight="12dip"
+                            android:gravity="bottom" />
+                            -->
+
+
+
 
         <LinearLayout
             android:id="@+id/midspace"
@@ -514,17 +533,19 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="vertical" />
+
     </LinearLayout>
 
-    <ProgressBar
-        android:id="@+id/spinningwait"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:indeterminateDrawable="@drawable/progress"
-        android:visibility="invisible" >
-    </ProgressBar>
-
+    <!--
+        <ProgressBar
+            android:id="@+id/spinningwait"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/progress"
+            android:visibility="invisible" >
+        </ProgressBar>
+    -->
 </RelativeLayout>
