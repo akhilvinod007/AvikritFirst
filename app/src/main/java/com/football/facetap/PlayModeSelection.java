@@ -247,6 +247,7 @@ public class PlayModeSelection extends FragmentActivity implements GoogleApiClie
     public void onSinglePlayGamePlayAgain(){
         Log.d("AKHIL","Single Play game cancelled by user in the main activity");
         currentScreen= currScreenEnum.DB_LOADING_FRAGMENT;
+
         Log.d("AKHIL","I hope this works. I had previously initialized this variable");
         getSupportFragmentManager().beginTransaction().replace(R.id.play_mode_selection_root,
                 mDBLoaderFragment).commit();

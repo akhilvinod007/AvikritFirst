@@ -124,9 +124,9 @@ public class DBLoader extends GameDataLoadingActivity  {
 			//Log.d("AKHIL","Timer tick   +" +millisUntilFinished);
 			secsFinished = millisUntilFinished;
 			if(tickCount!=0){
-				Log.d("AKHIL","size of ready questions is"+questionObjectArrayReady.size());
-				Log.d("AKHIL","size of pending questions is"+ questionObjectArrayPendingDownload.size());
-				Log.d("AKHIL","size of offline questions is"+ questionObjectArrayOffline.size());
+				Log.d("AKHIL","----size of ready questions is"+questionObjectArrayReady.size());
+				Log.d("AKHIL","----size of pending questions is"+ questionObjectArrayPendingDownload.size());
+				Log.d("AKHIL","----size of offline questions is"+ questionObjectArrayOffline.size());
 			}
 			tickCount++;
             if(!multiPlayer) {
@@ -297,6 +297,7 @@ public class DBLoader extends GameDataLoadingActivity  {
 		 */
 		super.onCreate(savedInstanceState);
         launchActivity = getActivity();
+		launchLock = false;
         if(PlayModeSelection.inviter_flag == PlayModeSelection.inviteEnum.INVITER)
             qhs_state=Qhs_state_enum.QHS_INIT_INVITER;
         else

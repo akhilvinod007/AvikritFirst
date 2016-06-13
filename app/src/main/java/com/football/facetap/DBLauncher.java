@@ -59,6 +59,8 @@ public class DBLauncher extends GameDataLoadingActivity implements View.OnClickL
 	 * but I am keeping it this way for the time being. buttonLock implements this logic
 	 * 
 	 */
+	TextView timeLeft;
+
 	Boolean buttonLock=true; 
 	int questionScore=MAX_QUESTION_SCORE;
 	int currentScore=0;
@@ -78,7 +80,7 @@ public class DBLauncher extends GameDataLoadingActivity implements View.OnClickL
     GameStatus previousStatus= GameStatus.DOWNLOADING;
     int current_question_number=0;
     int optionViewIds[]= new int[4];
-    long globalmillisUntilFinished=100000;
+    long globalmillisUntilFinished=60000;
     private final long gameDuration=100000;
     Listener listener = null;
     public interface Listener {
@@ -184,7 +186,7 @@ public class DBLauncher extends GameDataLoadingActivity implements View.OnClickL
 		public void onTick(long millisUntilFinished) {
 			globalmillisUntilFinished=millisUntilFinished;
 			//timeElapsed.setProgress((int) ( 100 - millisUntilFinished / 1000));
-			
+			timeLeft.setText("Time "+(globalmillisUntilFinished/1000));
 			
 		}
 	}
@@ -200,11 +202,14 @@ public class DBLauncher extends GameDataLoadingActivity implements View.OnClickL
         layoutView = inflater.inflate(R.layout.xml_gridlines_tile_main_plain, container, false);
         imagewrapper = (ImageView) layoutView.findViewById(R.id.imagewrapper);
 
-
+		timeLeft = (TextView) layoutView.findViewById(R.id.time);
 
         Typeface temptypeface = Typeface.createFromAsset(getActivity().getAssets(), "Digiface Regular.ttf");
         TextView tempview = (TextView)layoutView.findViewById(R.id.score);
         tempview.setTypeface(temptypeface);
+		tempview.setText("Score 0");
+		timeLeft.setTypeface(temptypeface);
+		timeLeft.setText("Time 60");
         temptypeface = Typeface.createFromAsset(getActivity().getAssets(), "Xoxoxa.ttf");
         int baseTileResourceId=R.id.tile_01;
 
@@ -331,7 +336,7 @@ public class DBLauncher extends GameDataLoadingActivity implements View.OnClickL
 				//questionProgess.setProgress(questionProgess.getProgress()+5);
 				currentScore+=questionScore;
 				questionScore=MAX_QUESTION_SCORE;
-				scoreBox.setText(String.format("%05d",currentScore));
+				scoreBox.setText(String.format("Score %d",currentScore));
 				Toast.makeText(getActivity().getApplicationContext(), "Correct!!", Toast.LENGTH_SHORT).show();
 
 				resetTileOverlay();
@@ -586,10 +591,11 @@ public class DBLauncher extends GameDataLoadingActivity implements View.OnClickL
 	}
 
 	public void displayRotatingSpinner() {
-		ProgressBar bar;
+		//ProgressBar bar;
 		Log.d("AKHIL","displaying rotating spinner");
-		bar = (ProgressBar) layoutView.findViewById(R.id.spinningwait);
-		bar.setVisibility(View.VISIBLE);
+		//bar = (ProgressBar) layoutView.findViewById(R.id.spinningwait);
+		//bar.setVisibility(View.VISIBLE);
+
 		for (int i=0;i<=current_question_number;i++){
 			if(i!=20){
 				DBOperations.useCountUpdatetoDB( db.getWritableDatabase(),category,questionObjectArray.
@@ -597,7 +603,7 @@ public class DBLauncher extends GameDataLoadingActivity implements View.OnClickL
 			}
 		}
 		updateDone=true;
-		bar.setVisibility(View.GONE);
+		//bar.setVisibility(View.GONE);
 	}
 }
 
