@@ -2,80 +2,133 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/radial_background"
-    android:orientation="vertical" >
-	
-    <Button
+    android:background="@drawable/silhoutte_kick_wtext"
+    android:orientation="vertical"
+    >
+<!--
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="Football Who?"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/play_button"
+        android:textColor="#FFFFFF"/>-->
+    <ImageButton
         android:id="@+id/play_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dip"
-        android:gravity="center"
-        android:background="@drawable/group_layout_style_odd"
-        android:paddingLeft="20dip"
-        android:paddingRight="20dip"
-        android:paddingTop="5dip"
-        android:paddingBottom="5dip"
-         
-       android:textSize="40sp"
-       android:textStyle="bold"
-       android:textColor="#FFFFFF"
-       android:onClick="onPlayClick"
-        android:text="Play" />
-    
-    <Button
-        android:id="@+id/sharebutton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dip"
-        android:gravity="center"
-        android:background="@drawable/group_layout_style_odd"
-        android:paddingLeft="20dip"
-        android:paddingRight="20dip"
-        android:paddingTop="5dip"
-        android:paddingBottom="5dip"
-        android:layout_below="@id/play_button"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_margin="5dip"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-       android:textSize="40sp"
-       android:textStyle="bold"
-       android:textColor="#FFFFFF"
-       
-        android:text="Share" />
-    
-    <Button
-        android:id="@+id/highscore_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dip"
         android:gravity="center"
-        android:background="@drawable/group_layout_style_odd"
-        android:paddingLeft="20dip"
-        android:paddingRight="20dip"
-        android:paddingTop="5dip"
-        android:paddingBottom="5dip"
-        android:layout_below="@id/sharebutton"
-       android:textSize="40sp"
-       android:textStyle="bold"
-       android:textColor="#FFFFFF"
-       
-        android:text="High Score" />
-    
-    <Button
-        android:id="@+id/help_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dip"
-        android:gravity="center"
-        android:background="@drawable/group_layout_style_odd"
-        android:paddingLeft="20dip"
-        android:paddingRight="20dip"
-        android:paddingTop="5dip"
-        android:paddingBottom="5dip"
-        android:layout_below="@id/highscore_button"
-       android:textSize="40sp"
-       android:textStyle="bold"
-       android:textColor="#FFFFFF"
-        android:text="Help" />
+        android:background="@drawable/group_layout_style_even"
 
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:onClick="onPlayClick"/>
+        <!--android:text="Play" -->
+
+    <ImageButton
+        android:id="@+id/sharebutton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:gravity="bottom|left"
+        android:background="@drawable/share_button"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:layout_alignParentBottom="true"
+         />
+
+    <ImageButton
+        android:id="@+id/ratebutton"
+        android:src="@drawable/rate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:gravity="bottom|left"
+        android:background="#00000000"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/sharebutton"
+        />
+
+    <ImageButton
+        android:id="@+id/audiobutton"
+        android:src="@drawable/ic_volume_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:gravity="bottom|left"
+        android:background="#00000000"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/ratebutton"
+        />
+
+    <ImageButton
+        android:id="@+id/statsbutton"
+        android:src="@drawable/ic_equalizer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:gravity="bottom|left"
+        android:background="#00000000"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/audiobutton"
+        />
+
+    <!--
+
+           android:textSize="40sp"
+           android:textStyle="bold"
+           android:textColor="#FFFFFF"
+
+            android:text="Share" />
+
+        <Button
+            android:id="@+id/highscore_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            android:gravity="center"
+            android:background="@drawable/group_layout_style_odd"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+
+           android:textSize="40sp"
+           android:textStyle="bold"
+           android:textColor="#FFFFFF"
+
+            android:text="High Score" />
+
+        <Button
+            android:id="@+id/help_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            android:gravity="center"
+            android:background="@drawable/group_layout_style_odd"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+
+           android:textSize="40sp"
+           android:textStyle="bold"
+           android:textColor="#FFFFFF"
+            android:text="Help" />
+    -->
 </RelativeLayout>

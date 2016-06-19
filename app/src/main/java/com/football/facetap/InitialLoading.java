@@ -32,12 +32,12 @@ public class InitialLoading extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.initiallogoscreen);
-		Typeface temptypeface = Typeface.createFromAsset(getAssets(), "Xoxoxa.ttf");
+		//Typeface temptypeface = Typeface.createFromAsset(getAssets(), "Xoxoxa.ttf");
 		imageView= (ImageView)findViewById(R.id.imageView1);
 		rotate= AnimationUtils.loadAnimation(this, R.anim.rotate);
 		imageView.startAnimation(rotate);
-		TextView tempview =(TextView)findViewById(R.id.gameTitle);
-		tempview.setTypeface(temptypeface);
+		//TextView tempview =(TextView)findViewById(R.id.gameTitle);
+		//tempview.setTypeface(temptypeface);
 		countdownTimer = new MyCountDownTimer(5000, 1000);
 		countdownTimer.start();
 	}
@@ -127,8 +127,8 @@ public class InitialLoading extends Activity {
 		public void onTick(long millisUntilFinished) {
 
 			if(millisUntilFinished <3000) {
-				TextView tempview =(TextView)findViewById(R.id.gameTitle);
-				tempview.setVisibility(View.VISIBLE);
+				//TextView tempview =(TextView)findViewById(R.id.gameTitle);
+				//tempview.setVisibility(View.VISIBLE);
 			}
 
 		}

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/silhoutte_kick_3"
     android:orientation="vertical" >
    <!-- android:background="@drawable/radial_background"
     -->
@@ -20,7 +20,7 @@
         android:layout_centerVertical="true"
         android:src="@drawable/footballlistviewimage" />
     <TextView 
-        android:id="@+id/gameTitle"
+        android:id="@+id/gameTitled"
         android:text="@string/gamename"
         android:textSize="50sp"
         android:textStyle="bold"
@@ -30,7 +30,7 @@
         android:gravity="center"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:textColor="#186ED6"
+        android:textColor="#FFFFFF"
         android:visibility="invisible"
         />
     

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
+    android:layout_height="match_parent"
+    android:background="@drawable/radial_background"
+    android:orientation="vertical">
+<!--
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/radial_background"
-        android:orientation="vertical" >
+        android:orientation="vertical" > -->
 
         <LinearLayout
             android:id="@+id/topspace"
@@ -158,14 +160,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="60"
-                android:background="#123456"
+                android:background="#58857e"
                 android:padding="10dp" >
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="false"
-                    android:background="#AAFFAA"
+                    android:background="#eabb11"
                     android:contentDescription="thepic"
                     android:orientation="horizontal" >
 
@@ -561,4 +563,3 @@
             android:visibility="invisible" >
         </ProgressBar>
     -->
-</RelativeLayout>

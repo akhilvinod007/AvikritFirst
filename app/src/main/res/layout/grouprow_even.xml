@@ -8,7 +8,7 @@
      android:orientation="horizontal"
      
      android:layout_margin="10dp"
-   android:background="@drawable/group_layout_style_even">	      			        
+   android:background="@drawable/ic_play_circle_outline_black">
 	<TextView
       android:id="@+id/categoryText"
       android:textColor="#ffffff"

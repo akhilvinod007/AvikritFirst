@@ -31,35 +31,29 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".GameDataLoadingActivity" >
-        </activity>
-        <activity
-            android:name=".DBLoader"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/title_activity_dbloader"
-            android:screenOrientation="portrait" >
-        </activity>
+
+
         <activity
             android:name=".HomeScreen"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="title_activity_homeScreen"
+            android:label="Football Who?"
             android:screenOrientation="portrait" >
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity
-            android:name=".DBLauncher"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="DBLauncher"
-            android:screenOrientation="portrait" >
-        </activity>
+
         <activity
             android:name=".InitialLoading"
             android:label="@string/title_activity_initial_loading"
             android:screenOrientation="portrait" >
-            <intent-filter>
+           <!-- <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
         <activity
             android:name=".PlayModeSelection"
@@ -67,12 +61,7 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait">
         </activity>
-        <activity
-            android:name=".multiplayerGameplay"
-            android:label="@string/title_activity_multiplayer_gameplay"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait">
-        </activity>
+
 
     </application>
 
