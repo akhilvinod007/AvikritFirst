@@ -30,7 +30,7 @@
 
         android:paddingTop="5dip"
         android:paddingBottom="5dip"
-        android:onClick="onPlayClick"/>
+        />
         <!--android:text="Play" -->
 
     <ImageButton

@@ -46,7 +46,7 @@ public class PlayModeSelection extends FragmentActivity implements GoogleApiClie
         DBLoader.Listener,
         DBLauncher.Listener,
         multiplayerGameplay.Listener,
-        PlayModeSelectionMainScreen.Listener
+        HomeScreen.Listener
 {
 
     public enum currScreenEnum {MAIN_SELECTION_FRAGMENT, DB_LOADING_FRAGMENT,MULTI_LOADING_FRAGMENT, SINGLE_PLAYER_FRAGMENT, MULTI_PLAYER_FRAGMENT,WAITING_ROOM_FRAGMENT};
@@ -65,7 +65,7 @@ public class PlayModeSelection extends FragmentActivity implements GoogleApiClie
     // Are we currently resolving a connection failure?
     private boolean mResolvingConnectionFailure = false;
 
-    private PlayModeSelectionMainScreen mMainMenuFragment;
+    private HomeScreen mMainMenuFragment;
     private DBLoader mDBLoaderFragment;
     private multiplayerGameplay mMultipleGamePlayFragment;
     private DBLauncher mDBLauncherFragment;// This is the single player fragment actually
@@ -135,7 +135,7 @@ public class PlayModeSelection extends FragmentActivity implements GoogleApiClie
         currentScreen= currScreenEnum.MAIN_SELECTION_FRAGMENT;
         if(mMainMenuFragment==null)
         {
-            mMainMenuFragment = new PlayModeSelectionMainScreen();
+            mMainMenuFragment = new HomeScreen();
             mMainMenuFragment.setListener(this);
         }
         getSupportFragmentManager().beginTransaction().replace(R.id.play_mode_selection_root,
@@ -181,7 +181,7 @@ public class PlayModeSelection extends FragmentActivity implements GoogleApiClie
                 .addApi(Plus.API).addScope(Plus.SCOPE_PLUS_LOGIN)
                 .addApi(Games.API).addScope(Games.SCOPE_GAMES)
                 .build();
-        mMainMenuFragment = new PlayModeSelectionMainScreen();
+        mMainMenuFragment = new HomeScreen();
         mMainMenuFragment.setListener(this);
         getSupportFragmentManager().beginTransaction().add(R.id.play_mode_selection_root,
                 mMainMenuFragment).commit();
@@ -215,13 +215,14 @@ public class PlayModeSelection extends FragmentActivity implements GoogleApiClie
         Log.d(TAG, "Sign-in succeeded.");
         Games.Invitations.registerInvitationListener(mGoogleApiClient, this);
         // Now make the sign-in button invisible and make the sign out button visible
+        /*
         if(currentScreen == currScreenEnum.MAIN_SELECTION_FRAGMENT) {
             View temp_button = findViewById(R.id.button_sign_in_play_mode_activity);
             temp_button.setVisibility(View.INVISIBLE);
             temp_button = findViewById(R.id.button_sign_out_play_mode_activity);
             temp_button.setVisibility(View.VISIBLE);
         }
-
+*/
         Games.setViewForPopups(mGoogleApiClient, getWindow().getDecorView().findViewById(android.R.id.content));
     }
 
@@ -560,9 +561,10 @@ public class PlayModeSelection extends FragmentActivity implements GoogleApiClie
                 break;
             case MAIN_SELECTION_FRAGMENT:
                 Log.d("AKHIL","Back pressed on main fragment");
-                Intent intent = new Intent(PlayModeSelection.this,HomeScreen.class);
+                /*Intent intent = new Intent(PlayModeSelection.this,HomeScreen.class);
                 startActivity(intent);
-                PlayModeSelection.this.finish();
+                PlayModeSelection.this.finish();*/
+                mMainMenuFragment.onBackPressed();
                 break;
             case SINGLE_PLAYER_FRAGMENT:
                 Log.d("AKHIL","Back Button pressed on the Single player fragment");
